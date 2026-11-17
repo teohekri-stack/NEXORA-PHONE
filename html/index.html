@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nexora Phone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="apps.css">
+</head>
+<body>
+    <!-- Banners shown on the game screen while the phone is in the pocket -->
+    <div id="outside" class="outside"></div>
+
+    <!-- Camera viewfinder (the phone itself is hidden while it is active) -->
+    <div id="viewfinder" class="viewfinder" hidden>
+        <div class="vf-frame"><i></i><i></i><i></i><i></i></div>
+        <div class="vf-top">
+            <span id="vf-mode" class="vf-chip">REAR</span>
+            <span id="vf-zoom" class="vf-chip">1.0x</span>
+        </div>
+        <div id="vf-status" class="vf-status"></div>
+        <div class="vf-hints">
+            <span><kbd>Mouse</kbd> Aim</span>
+            <span><kbd>Scroll</kbd> Zoom</span>
+            <span><kbd>&uarr;</kbd><kbd>&darr;</kbd> Flip</span>
+            <span><kbd>Click</kbd><kbd>Enter</kbd> Shoot</span>
+            <span><kbd>Backspace</kbd> Exit</span>
+        </div>
+        <div id="vf-flash" class="vf-flash"></div>
+    </div>
+
+    <div id="phone-wrap" class="phone-wrap">
+        <div id="phone" class="phone" data-notch="island">
+            <span class="phone-key key-a"></span>
+            <span class="phone-key key-b"></span>
+            <span class="phone-key key-c"></span>
+
+            <div id="screen" class="screen" data-tone="wall">
+                <div id="wallpaper" class="wallpaper"></div>
+
+                <!-- Home screen -->
+                <div id="home" class="home">
+                    <div class="glance">
+                        <div id="glance-title" class="glance-title"></div>
+                        <div id="glance-sub" class="glance-sub"></div>
+                    </div>
+                    <div id="home-grid" class="home-grid"></div>
+                    <div id="home-dock" class="home-dock"></div>
+                </div>
+
+                <!-- Running apps are mounted in here -->
+                <div id="apps" class="apps"></div>
+
+                <!-- Lock screen -->
+                <div id="lock" class="lock">
+                    <div class="lock-head">
+                        <div id="lock-date" class="lock-date"></div>
+                        <div id="lock-time" class="lock-time"></div>
+                    </div>
+                    <div id="lock-notes" class="lock-notes"></div>
+                    <button id="lock-open" class="lock-open" type="button">
+                        <span class="lock-open-icon"></span>
+                        <span>Tap to unlock</span>
+                    </button>
+                </div>
+
+                <!-- Call screen (incoming / outgoing / connected) -->
+                <div id="call" class="call" hidden></div>
+
+                <!-- Notification centre -->
+                <div id="center" class="center" hidden></div>
+
+                <!-- Status bar -->
+                <div id="statusbar" class="statusbar">
+                    <button id="sb-time" class="sb-time" type="button"></button>
+                    <span id="sb-island" class="sb-island"></span>
+                    <span class="sb-right">
+                        <span id="sb-icons" class="sb-icons"></span>
+                        <span id="sb-signal" class="sb-signal"><i></i><i></i><i></i><i></i></span>
+                        <span id="sb-battery" class="sb-battery"><b></b><span class="sb-battery-shell"><span class="sb-battery-fill"></span></span></span>
+                    </span>
+                </div>
+
+                <div id="banner" class="banner"></div>
+                <div id="modal" class="modal" hidden></div>
+                <div id="toast" class="toast"></div>
+
+                <button id="homebar" class="homebar" type="button" aria-label="Home"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

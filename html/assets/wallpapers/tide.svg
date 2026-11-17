@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 2280" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bfe9ff"/>
+      <stop offset="0.5" stop-color="#7cc8f5"/>
+      <stop offset="1" stop-color="#2d7fd0"/>
+    </linearGradient>
+    <linearGradient id="w1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4fb3ee"/><stop offset="1" stop-color="#2a7fd0"/>
+    </linearGradient>
+    <linearGradient id="w2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b86d6"/><stop offset="1" stop-color="#1a56ad"/>
+    </linearGradient>
+    <linearGradient id="w3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c5db6"/><stop offset="1" stop-color="#0d2f78"/>
+    </linearGradient>
+    <linearGradient id="w4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#103a8c"/><stop offset="1" stop-color="#071a4a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="2280" fill="url(#sky)"/>
+  <circle cx="820" cy="430" r="150" fill="#fff" opacity="0.55"/>
+  <circle cx="820" cy="430" r="260" fill="#fff" opacity="0.14"/>
+  <path d="M0 1060 C 180 980, 360 1100, 540 1040 S 900 940, 1080 1040 L 1080 2280 L 0 2280 Z" fill="url(#w1)"/>
+  <path d="M0 1330 C 200 1240, 380 1400, 600 1310 S 920 1230, 1080 1320 L 1080 2280 L 0 2280 Z" fill="url(#w2)"/>
+  <path d="M0 1610 C 160 1540, 400 1680, 620 1590 S 940 1520, 1080 1620 L 1080 2280 L 0 2280 Z" fill="url(#w3)"/>
+  <path d="M0 1900 C 220 1820, 420 1960, 640 1880 S 920 1820, 1080 1900 L 1080 2280 L 0 2280 Z" fill="url(#w4)"/>
+</svg>
